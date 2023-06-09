@@ -8,7 +8,7 @@ namespace BinarySearchTreeUsingCSHARP
 {
     internal class CustomBinarySearchTree
     {
-        private class Node
+        public class Node
         {
             public int Data;
             public Node Left;
@@ -20,6 +20,10 @@ namespace BinarySearchTreeUsingCSHARP
             }
         }
         private Node Root;
+        public Node ReturnRoot()
+        { 
+            return Root;
+        }
         public void Add(int data)
         {
             Node newNode = new Node(data);
@@ -86,6 +90,15 @@ namespace BinarySearchTreeUsingCSHARP
                 }
             }
             return false;
+        }
+        public void PreorderDisplay(Node root)
+        {
+            if (root != null)
+            {
+                Console.Write(root.Data + " ");
+                PreorderDisplay(root.Left);
+                PreorderDisplay(root.Right);
+            }
         }
     }
 }

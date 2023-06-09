@@ -15,16 +15,18 @@
             CustomBst.Add(93);
             CustomBst.Add(16);
 
-            int x = 26;
-            Console.Write(CustomBst.Search(x));
-            if (CustomBst.Search(x))
-            {
-                Console.WriteLine("\nThe Given Number " + x + " Is Present In Binary Search Tree\n");
-            }
-            else
-            {
-                Console.WriteLine("\nThe Given Number " + x + " Is Not Present In Binary Search Tree\n");
-            }
+            //int x = 26;
+            //Console.Write(CustomBst.Search(x));
+            //if (CustomBst.Search(x))
+            //{
+            //    Console.WriteLine("\nThe Given Number " + x + " Is Present In Binary Search Tree\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("\nThe Given Number " + x + " Is Not Present In Binary Search Tree\n");
+            //}
+            Console.Write("\nPreorder Traversal : \n");
+            CustomBst.PreorderDisplay(CustomBst.ReturnRoot());
         }
     }
 }

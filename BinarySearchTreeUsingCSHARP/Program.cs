@@ -25,11 +25,15 @@
             //{
             //    Console.WriteLine("\nThe Given Number " + x + " Is Not Present In Binary Search Tree\n");
             //}
+
             //Console.Write("\nPreorder Traversal : \n");
             //CustomBst.PreorderDisplay(CustomBst.ReturnRoot());
 
             Console.Write("\nInorder traversal of tree is :\n");
             CustomBst.InorderDisplay(CustomBst.ReturnRoot());
+
+            Console.Write("\nPost Order Traversal Of tree is :\n");
+            CustomBst.PostorderDisplay(CustomBst.ReturnRoot());
         }
     }
 }

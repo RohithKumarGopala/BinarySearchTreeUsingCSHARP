@@ -109,5 +109,14 @@ namespace BinarySearchTreeUsingCSHARP
                 PreorderDisplay(root.Right);
             }
         }
+        public void PostorderDisplay(Node root)
+        {
+            if (root != null)
+            {
+                PostorderDisplay(root.Left);
+                PostorderDisplay(root.Right);
+                Console.Write(root.Data + " ");
+            }
+        }
     }
 }
